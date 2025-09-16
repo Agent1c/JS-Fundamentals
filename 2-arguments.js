@@ -8,13 +8,12 @@ You must use console.log(...) to print all output
 You are not allowed to use var 
 */
 
-// let argVar = 0;
 // import process.argv
 
-const { argv } = require('node:process');
+const args = process.argv.slice(2); // Skip node and script path
 
-if(process.argv.length <= 2){
+if(process.argv.length  ===0){
     console.log("No argument")
-}else{
-    console.log(`Arguments found ${process.argv[1]}`)
-}
+}else if(args.length === 1){
+    console.log("Arguments found")
+}console.log("Arguments found")
