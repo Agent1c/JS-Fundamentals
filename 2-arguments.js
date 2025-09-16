@@ -13,19 +13,8 @@ You are not allowed to use var
 
 const { argv } = require('node:process');
 
-// for (let i = 0; i < process.argv.lenght; i++){
-
-// }
-
-argv.forEach((val, index) => {
-    console.log(`${index}, ${val}`)
-});
-
-if (argv == argv) {
-    if (!argv) {
-        console.log('No argument');
-    } else if (argv) {
-        console.log('Argument found')
-    };
-    console.log('Arguments found')
-};
+if(process.argv.length <= 2){
+    console.log("No argument")
+}else{
+    console.log(`Arguments found ${process.argv[1]}`)
+}
