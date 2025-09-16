@@ -9,11 +9,12 @@ You are not allowed to use var
 */
 
 // import process.argv
-
 const args = process.argv.slice(2); // Skip node and script path
 
-if(process.argv.length  ===0){
-    console.log("No argument")
-}else if(args.length === 1){
-    console.log("Arguments found")
-}console.log("Arguments found")
+if (args.length === 0) {
+  console.log("No argument");
+} else if (args.length === 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
+}
