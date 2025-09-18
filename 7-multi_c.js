@@ -7,9 +7,9 @@ if (isNaN(number)){
 }else{
 
     // Create a list of "C is fun" if the user inputs a number
-    let result = ''
+    let result = '';
     for (let i = 0; i < number; i++){
-        result += "C is fun\n";
+        result += "C is fun";
     }
     console.log(result.trim())
 
