@@ -6,7 +6,10 @@ const number = parseInt(input, 10);
 
 // checks if user arg is a String or Number
 if(process.argv[2]){
-    console.log(`My number: ${number}`)
-}else{
-    console.log('Not a number')
+
+    if(isNaN(number) == NaN){
+        console.log(`Not number: ${number}`)
+    }else{
+        console.log(`My number: ${number}`)
+    }
 }
