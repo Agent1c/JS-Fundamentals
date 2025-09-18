@@ -7,8 +7,8 @@ const number = parseInt(input, 10);
 // checks if user arg is a String or Number
 if(process.argv[2]){
 
-    if(isNaN(number) == NaN){
-        console.log(`Not number: ${number}`)
+    if(isNaN(number)){
+        console.log(`Not a number`)
     }else{
         console.log(`My number: ${number}`)
     }
