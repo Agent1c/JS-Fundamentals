@@ -1,7 +1,6 @@
-let myArr = ['C is fun', 'Python is cool', 'JavaScript is amazing']
+let multi_languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
 
-while(i < myArr){
-  for(let i = 0; i < myArr.length; i++){
-  console.log(myArr[i]);
-}
+// itarating through multi_languages array
+for(let lang = 0; lang < multi_languages.length; lang++){
+  console.log(multi_languages[lang])
 }
