@@ -11,7 +11,7 @@ if (isNaN(number)){
     for (let i = 0; i < number; i++){
         result += "C is fun\n";
     }
-    console.log(result)
+    console.log(result.trim())
 
     // let result = ''; //- empty string called result - -  will be used to collect all the "C is fun" lines in one place.
 
